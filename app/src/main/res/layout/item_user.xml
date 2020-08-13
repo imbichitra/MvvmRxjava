@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="5dp"
+    android:layout_margin="16dp"
+    android:id="@+id/item_people"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_people"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:layout_alignTop="@+id/image_people"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:text="Ahmad Shubita"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/label_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/label_name"
+            android:layout_below="@+id/label_name"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="15sp"
+            tools:text="0729-256-147"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/label_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/label_phone"
+            android:layout_below="@+id/label_phone"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="15sp"
+            tools:text="gary.allen@example.com"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
